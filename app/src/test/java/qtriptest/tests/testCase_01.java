@@ -5,12 +5,10 @@ import qtriptest.pages.HomePage;
 import qtriptest.pages.LoginPage;
 import qtriptest.pages.RegisterPage;
 import java.net.MalformedURLException;
-import org.openqa.selenium.By;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
 public class testCase_01 {
     //verify userRegistration
@@ -25,7 +23,7 @@ public class testCase_01 {
     public static void TestCase01() throws InterruptedException{
         HomePage home = new HomePage(driver);
         home.gotoHomePage();
-        System.out.println(driver.getCurrentUrl());
+        // System.out.println(driver.getCurrentUrl());
         Thread.sleep(2000);
         home.navigateToRegisterPage();
         Thread.sleep(2000);
@@ -36,18 +34,18 @@ public class testCase_01 {
         registration.registerUser(email, passwd, passwd, true);
         Thread.sleep(5000);
         String lastGeneratedUserEmail = registration.lastGeneratedUserEmail;
-        System.out.println(lastGeneratedUserEmail);
+        // System.out.println(lastGeneratedUserEmail);
 
-        home.navigateToLoginPage();
+        // home.navigateToLoginPage();//not needed as after registration page is redirected to login page
         Thread.sleep(5000);
         LoginPage login = new LoginPage(driver);
         login.performLogin(lastGeneratedUserEmail, passwd);
         Thread.sleep(5000);
 
         if(home.isUserLoggedIn()){
-            System.out.println("User successfully logged in with id: "+ lastGeneratedUserEmail);
+            // System.out.println("User successfully logged in with id: "+ lastGeneratedUserEmail);
             home.performLogOut();
-            System.out.println("User successfully logged out with id: "+ lastGeneratedUserEmail);
+            // System.out.println("User successfully logged out with id: "+ lastGeneratedUserEmail);
         }
         else{
             System.out.println("Failed to successfully login User !");

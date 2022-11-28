@@ -36,6 +36,7 @@ public class LoginPage {
     public void performLogin(String emailId, String password) throws InterruptedException {
         emailInput.sendKeys(emailId);
         passwordInput.sendKeys(password);
+        Thread.sleep(2000);
         loginBtn.click();
     }
 }
