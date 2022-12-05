@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-12-05T11:42:53 IST" name="QTrip test suite" finished-at="2022-12-05T11:43:41 IST" duration-ms="47661">
+    <groups>
+      <group name="group1">
+        <method signature="testCase_01.TestCase01(java.lang.String,java.lang.String)[pri:1, instance:qtriptest.tests.testCase_01@68c9133c]" name="TestCase01" class="qtriptest.tests.testCase_01"/>
+      </group> <!-- group1 -->
+    </groups>
+    <test started-at="2022-12-05T11:42:53 IST" name="Test for QTrip regression" finished-at="2022-12-05T11:43:41 IST" duration-ms="47661">
+      <class name="qtriptest.tests.testCase_01">
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:qtriptest.tests.testCase_01@68c9133c]" started-at="2022-12-05T11:42:53 IST" name="setDriver" finished-at="2022-12-05T11:42:56 IST" duration-ms="3493" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method signature="TestCase01(java.lang.String,java.lang.String)[pri:1, instance:qtriptest.tests.testCase_01@68c9133c]" started-at="2022-12-05T11:42:58 IST" name="TestCase01" description="User Onboarding Flow" data-provider="dataProvider" finished-at="2022-12-05T11:43:13 IST" duration-ms="14789" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testuser@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase01 -->
+        <test-method signature="TestCase01(java.lang.String,java.lang.String)[pri:1, instance:qtriptest.tests.testCase_01@68c9133c]" started-at="2022-12-05T11:43:13 IST" name="TestCase01" description="User Onboarding Flow" data-provider="dataProvider" finished-at="2022-12-05T11:43:27 IST" duration-ms="13898" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TESTUSER@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase01 -->
+        <test-method signature="TestCase01(java.lang.String,java.lang.String)[pri:1, instance:qtriptest.tests.testCase_01@68c9133c]" started-at="2022-12-05T11:43:27 IST" name="TestCase01" description="User Onboarding Flow" data-provider="dataProvider" finished-at="2022-12-05T11:43:40 IST" duration-ms="13748" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[123_USER_low@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[QWERTY!!!!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase01 -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:qtriptest.tests.testCase_01@68c9133c]" started-at="2022-12-05T11:43:41 IST" name="quitDriver" finished-at="2022-12-05T11:43:41 IST" duration-ms="68" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- qtriptest.tests.testCase_01 -->
+    </test> <!-- Test for QTrip regression -->
+  </suite> <!-- QTrip test suite -->
+</testng-results>
