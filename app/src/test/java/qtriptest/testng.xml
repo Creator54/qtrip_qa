@@ -4,9 +4,9 @@
       <test name="Test for QTrip regression">
             <classes>
                   <class name = "qtriptest.tests.testCase_01"></class>
-                  <!-- <class name = "qtriptest.tests.testCase_02"></class>
+                  <class name = "qtriptest.tests.testCase_02"></class>
                   <class name = "qtriptest.tests.testCase_03"></class>
-                  <class name = "qtriptest.tests.testCase_04"></class> -->
+                  <class name = "qtriptest.tests.testCase_04"></class>
 
             </classes>
       </test> <!-- Test -->
